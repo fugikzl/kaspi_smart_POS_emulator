@@ -83,6 +83,7 @@ $router->get("/status", function() use ($faker, $db){
                     "address" => $data["address"],
                     "amount" => $data["cheque_amount"],
                     "bin" => $data["bin"],
+                    "city" => $data["city"],
                     "date" => $data["date"],
                     "method" => $data["method"],
                     "orderNumber" => $data["order_number"],

@@ -182,8 +182,8 @@ $router->get("emulate/decline/{processId}",function($processId) use ($db){
         }else{
             
             $db->update("payments",[
-                "status" => ""
-            ],"processId = $processId");
+                "status" => "decline"
+            ],"process_id = $processId");
 
             exit(200);
         }
